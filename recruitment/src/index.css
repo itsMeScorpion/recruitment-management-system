@@ -1,0 +1,360 @@
+.header{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5%;
+}
+
+/* .side-navbar {
+  width: 180px;
+  height: 100%;
+  position: fixed;
+  margin-left: -300px;
+  background-color: #100901;
+  transition: 0.5s;
+} */
+.navIcon{
+  text-decoration: none;
+  padding: 2%;
+  text-align: center;
+}
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+  background-color: #ffffff26;
+}
+.button{
+  margin-right: 2vh;
+    margin-left: 2vh;
+}
+.my-container {
+  transition: 0.4s;
+}
+
+.active-nav {
+  margin-left: 0;
+}
+
+/* for main section */
+.active-cont {
+  margin-left: 180px;
+}
+
+#menu-btn {
+  background-color: #100901;
+  color: #fff;
+  margin-left: -62px;
+}
+
+.my-container input {
+  border-radius: 2rem;
+  padding: 2px 20px;
+}
+
+
+/* job card style */
+
+.job-box .img-holder {
+  height: 65px;
+  width: 65px;
+  background-color: #222224;
+ 
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 65px;
+}
+
+.career-title {
+  background-color: #4e63d7;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px 10px 0 0;
+ 
+}
+
+.job-overview {
+  -webkit-box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
+          box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
+  border-radius: 10px;
+}
+
+
+
+.job-overview .job-detail ul {
+  margin-bottom: 28px;
+}
+
+.job-overview .job-detail ul li {
+  opacity: 0.75;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.job-overview .job-detail ul li i {
+  font-size: 20px;
+  position: relative;
+  top: 1px;
+}
+.background{
+  background: url("https://wallpaperaccess.com/full/51363.jpg") no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+}
+.job-overview .overview-bottom,
+.job-overview .overview-top {
+  padding: 35px;
+}
+
+.job-content ul li {
+  font-weight: 600;
+  opacity: 0.75;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 5px;
+}
+
+@media (min-width: 768px) {
+  .job-content ul li {
+    border-bottom: 0;
+    padding: 0;
+  }
+}
+
+.job-content ul li i {
+  font-size: 20px;
+  position: relative;
+  top: 1px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+
+/* style for application list table  */
+
+.user-list tbody td > img {
+  position: relative;
+max-width: 50px;
+float: left;
+margin-right: 15px;
+}
+.user-list tbody td .user-link {
+display: block;
+font-size: 1.25em;
+padding-top: 3px;
+margin-left: 60px;
+}
+.user-list tbody td .user-subhead {
+font-size: 0.875em;
+font-style: italic;
+}
+
+/* TABLES */
+.table {
+  border-collapse: separate;
+}
+.table-hover > tbody > tr:hover > td,
+.table-hover > tbody > tr:hover > th {
+background-color: #eee;
+}
+.table thead > tr > th {
+border-bottom: 1px solid #C2C2C2;
+padding-bottom: 0;
+}
+
+
+.table tbody > tr > td {
+font-size: 0.875em;
+background: #f5f5f5;
+border-top: 10px solid #fff;
+vertical-align: middle;
+padding: 12px 8px;
+}
+.table tbody > tr > td:first-child,
+.table thead > tr > th:first-child {
+padding-left: 20px;
+}
+.table thead > tr > th span {
+border-bottom: 2px solid #C2C2C2;
+display: inline-block;
+padding: 0 5px;
+padding-bottom: 5px;
+font-weight: 600;
+}
+.table thead > tr > th > a span {
+color: #344644;
+}
+.table thead > tr > th > a span:after {
+content: "\f0dc";
+font-family: FontAwesome;
+font-style: normal;
+font-weight: normal;
+text-decoration: inherit;
+margin-left: 5px;
+font-size: 0.75em;
+}
+.table thead > tr > th > a.asc span:after {
+content: "\f0dd";
+}
+.table thead > tr > th > a.desc span:after {
+content: "\f0de";
+}
+.table thead > tr > th > a:hover span {
+text-decoration: none;
+color: #2bb6a3;
+border-color: #2bb6a3;
+}
+.table.table-hover tbody > tr > td {
+-webkit-transition: background-color 0.15s ease-in-out 0s;
+transition: background-color 0.15s ease-in-out 0s;
+}
+.table tbody tr td .call-type {
+display: block;
+font-size: 0.75em;
+text-align: center;
+}
+.table tbody tr td .first-line {
+line-height: 1.5;
+font-weight: 400;
+font-size: 1.125em;
+}
+.table tbody tr td .first-line span {
+font-size: 0.875em;
+color: #969696;
+font-weight: 300;
+}
+.table tbody tr td .second-line {
+font-size: 0.875em;
+line-height: 1.2;
+}
+.table a.table-link {
+margin: 0 5px;
+font-size: 30px;
+color: blue;
+}
+.table a.table-link:hover {
+text-decoration: none;
+color: #2aa493;
+}
+.table a.table-link.danger {
+color: #fe635f;
+}
+.table a.table-link.danger:hover {
+color: #dd504c;
+}
+
+.table-products tbody > tr > td {
+background: none;
+border: none;
+border-bottom: 1px solid #ebebeb;
+-webkit-transition: background-color 0.15s ease-in-out 0s;
+transition: background-color 0.15s ease-in-out 0s;
+position: relative;
+}
+.table-products tbody > tr:hover > td {
+text-decoration: none;
+background-color: #f6f6f6;
+}
+.table-products .name {
+display: block;
+font-weight: 600;
+padding-bottom: 7px;
+}
+.table-products .price {
+display: block;
+text-decoration: none;
+width: 50%;
+float: left;
+font-size: 0.875em;
+}
+.table-products .price > i {
+color: #8dc859;
+}
+.table-products .warranty {
+display: block;
+text-decoration: none;
+width: 50%;
+float: left;
+font-size: 0.875em;
+}
+.table-products .warranty > i {
+color: #f1c40f;
+}
+.table tbody > tr.table-line-fb > td {
+background-color: #9daccb;
+color: #262525;
+}
+.table tbody > tr.table-line-twitter > td {
+background-color: #9fccff;
+color: #262525;
+}
+.table tbody > tr.table-line-plus > td {
+background-color: #eea59c;
+color: #262525;
+}
+.table-stats .status-social-icon {
+font-size: 1.9em;
+vertical-align: bottom;
+}
+.table-stats .table-line-fb .status-social-icon {
+color: #556484;
+}
+.table-stats .table-line-twitter .status-social-icon {
+color: #5885b8;
+}
+.table-stats .table-line-plus .status-social-icon {
+color: #a75d54;
+}
+.applicant_name {
+margin-top: 10px;
+font-size: 18px;
+font-weight: 600;
+
+}
+
+/* DASHBOARD CARDS  */
+
+
+.card {
+position: relative;
+display: flex;
+flex-direction: column;
+min-width: 0;
+word-wrap: break-word;
+background-color: #fff;
+background-clip: border-box;
+border: 0px solid rgba(0, 0, 0, 0);
+border-radius: .25rem;
+margin-bottom: 1.5rem;
+box-shadow: 0 2px 6px 0 rgba(28, 28, 29, 0.65), 0 2px 6px 0 rgba(19, 19, 20, 0.54);
+}
+/* .bg-gradient-scooter {
+background: #17ead9;
+background: -webkit-linear-gradient( 
+45deg
+, #17ead9, #100901)!important;
+background: linear-gradient( 
+45deg
+, #17ead9, #100901)!important;
+}
+.widgets-icons-2 {
+width: 56px;
+height: 56px;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #ededed;
+font-size: 27px;
+border-radius: 10px;
+} */

@@ -1,0 +1,20 @@
+{
+  "name": "hackathon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "json-server --watch db.json --port 3005",
+    "client": "npm start --prefix recruitment",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@react-pdf-viewer/core": "^3.9.0",
+    "concurrently": "^7.6.0",
+    "json-server": "^0.17.1"
+  }
+}
