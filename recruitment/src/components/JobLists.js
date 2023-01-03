@@ -39,7 +39,7 @@ const JobLists = () => {
   return (
     <div className="mt-2 mb-2">
       <Header />
-      <div className="d-flex flex-row m-3">
+      <div className="d-flex flex-row m-3" style={{ justifyContent: 'auto' }}>
         <form className="d-flex w-50" onSubmit={onSearch}>
           {/* search box */}
           <input
@@ -58,7 +58,10 @@ const JobLists = () => {
           </button>
         </form>
       </div>
-      <div className=" m-4">
+      <div
+        className="d-flex"
+        style={{ justifyContent: 'space-evenly', marginTop: '5%' }}
+      >
         {/* job cards */}
         {data.length === 0
           ? null

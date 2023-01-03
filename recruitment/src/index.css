@@ -1,7 +1,8 @@
 .header{
   display: flex;
   justify-content: space-between;
-  margin-top: 1.5%;
+  background-color:transparent;
+  color: white;
 }
 
 /* .side-navbar {
@@ -12,6 +13,12 @@
   background-color: #100901;
   transition: 0.5s;
 } */
+.wallpaper{
+  background:url('https://c0.wallpaperflare.com/preview/440/715/681/dark-green-green-elaf-dark-background.jpg')no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
 .navIcon{
   text-decoration: none;
   padding: 2%;
@@ -53,7 +60,7 @@
 
 /* job card style */
 
-.job-box .img-holder {
+/* .job-box .img-holder {
   height: 65px;
   width: 65px;
   background-color: #222224;
@@ -72,26 +79,26 @@
       -ms-flex-align: center;
           align-items: center;
   border-radius: 65px;
-}
+} */
 
-.career-title {
+/* .career-title {
   background-color: #4e63d7;
   color: #fff;
   padding: 15px;
   text-align: center;
   border-radius: 10px 10px 0 0;
  
-}
+} */
 
-.job-overview {
+/* .job-overview {
   -webkit-box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
           box-shadow: 0 0 35px 0 rgba(130, 130, 130, 0.2);
   border-radius: 10px;
-}
+} */
 
 
 
-.job-overview .job-detail ul {
+/* .job-overview .job-detail ul {
   margin-bottom: 28px;
 }
 
@@ -105,14 +112,14 @@
   font-size: 20px;
   position: relative;
   top: 1px;
-}
+} */
 .background{
   background: url("https://wallpaperaccess.com/full/51363.jpg") no-repeat;
   background-size: cover;
   height: 100vh;
   display: flex;
 }
-.job-overview .overview-bottom,
+/* .job-overview .overview-bottom,
 .job-overview .overview-top {
   padding: 35px;
 }
@@ -122,7 +129,7 @@
   opacity: 0.75;
   border-bottom: 1px solid #ccc;
   padding: 10px 5px;
-}
+} */
 
 @media (min-width: 768px) {
   .job-content ul li {
@@ -131,11 +138,11 @@
   }
 }
 
-.job-content ul li i {
+/* .job-content ul li i {
   font-size: 20px;
   position: relative;
   top: 1px;
-}
+} */
 .mb-30 {
     margin-bottom: 30px;
 }
@@ -329,8 +336,8 @@ font-weight: 600;
 .card {
 position: relative;
 display: flex;
-flex-direction: column;
 min-width: 0;
+width: 20rem;
 word-wrap: break-word;
 background-color: #fff;
 background-clip: border-box;
@@ -339,22 +346,3 @@ border-radius: .25rem;
 margin-bottom: 1.5rem;
 box-shadow: 0 2px 6px 0 rgba(28, 28, 29, 0.65), 0 2px 6px 0 rgba(19, 19, 20, 0.54);
 }
-/* .bg-gradient-scooter {
-background: #17ead9;
-background: -webkit-linear-gradient( 
-45deg
-, #17ead9, #100901)!important;
-background: linear-gradient( 
-45deg
-, #17ead9, #100901)!important;
-}
-.widgets-icons-2 {
-width: 56px;
-height: 56px;
-display: flex;
-align-items: center;
-justify-content: center;
-background-color: #ededed;
-font-size: 27px;
-border-radius: 10px;
-} */

@@ -6,6 +6,7 @@ import { useDispatch } from 'react-redux';
 import AdminPageNav from './AdminPageNav';
 import { passwordUpdate } from '../action/index';
 import * as Yup from 'yup';
+import services from '../services';
 
 const ChangePassword = () => {
   const dispatch = useDispatch();

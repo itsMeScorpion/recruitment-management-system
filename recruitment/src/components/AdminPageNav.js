@@ -12,30 +12,31 @@ const AdminPageNav = () => {
     dispatch(setlogout(false));
   };
   return (
-    <div className=" container header">
-      <div className="header">
-        <h3>Recruitment Admin Page</h3>
+    <div className="header">
+      <div className=" container header">
+        <div>
+          <h3 className="mt-4">Recruitment Admin Page</h3>
+        </div>
+        <Link className="navIcon nav-link" to={'/Dashboard'}>
+          Dashboard
+        </Link>
+        <Link className="navIcon nav-link" to={'/manage-jobs'}>
+          Manage Jobs
+        </Link>
+        <Link className="navIcon nav-link" to={'/application-list'}>
+          Applications
+        </Link>
+        <Link className="navIcon nav-link" to={'/change-password'}>
+          Change Password
+        </Link>
+        <button
+          className="btn btn-danger"
+          style={{ height: '40px', marginTop: '1.5%' }}
+          onClick={adminlogout}
+        >
+          Logout
+        </button>
       </div>
-
-      <Link className="navIcon" to={'/Dashboard'}>
-        Dashboard
-      </Link>
-      <Link className="navIcon" to={'/manage-jobs'}>
-        Manage Jobs
-      </Link>
-      <Link className="navIcon" to={'/application-list'}>
-        Applications
-      </Link>
-      <Link className="navIcon" to={'/change-password'}>
-        Change Password
-      </Link>
-      <button
-        className="btn btn-danger "
-        style={{ height: '2%', marginTop: '1.5%' }}
-        onClick={adminlogout}
-      >
-        Logout
-      </button>
     </div>
   );
 };
