@@ -41,5 +41,5 @@ export default {
   getJobById: (id) => jsonserver.get(`jobs/${id}`),
 
   //update password
-  updatePass: (id, data) => jsonserver.put(`login/${id}`, data),
+  updatePass: (id, data) => jsonserver.patch(`login/${id}`, data),
 };

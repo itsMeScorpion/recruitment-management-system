@@ -95,16 +95,23 @@ export const setlogout = () => async (dispatch) => {
 
 export const passwordUpdate = (details) => async (dispatch) => {
   const { data } = await services.getChangePassword();
-  // console.log(data.data);
-  const decrypted = await validatePassword(data.password);
-  if (decrypted === details.currentPass) {
+  console.log('data', data);
+  console.log('details', details.newPass);
+
+  const decrypted = validatePassword(data[0].password, details.currentPass);
+
+  console.log('decrypted', decrypted);
+  if (decrypted) {
+    const id = 1;
     let newPs = getPasswordHashResponse(details.newPass);
-    let userName = data.username;
-    const query = await services.updatePass('/', {
-      userName,
+    let userName = data[0].username;
+    console.log('userName', userName);
+    const query = await services.updatePass(id, {
+      username: userName,
       password: newPs,
     });
     console.log({ userName, newPs });
+    alert('password changed');
   } else {
     alert('Current Password is wrong');
   }

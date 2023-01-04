@@ -29,10 +29,10 @@ const ChangePassword = () => {
   });
 
   return (
-    <div>
+    <div className="wallpaper">
       <AdminPageNav />
       <div className="p-1 my-container active-cont mt-5">
-        <h2>Change Password</h2>
+        <h2 className="text-white">Change Password</h2>
         <Formik
           initialValues={{
             // initial values
@@ -45,9 +45,10 @@ const ChangePassword = () => {
           //updating password on button submit
           onSubmit={(values, { resetForm }) => {
             resetForm({ values: '' });
-            if (values.confirmPass !== values.currentPass) {
-              dispatch(passwordUpdate(values));
-            } else alert('Try Another Password');
+            dispatch(passwordUpdate(values));
+            // if (values.confirmPass !== values.currentPass) {
+            //   dispatch(passwordUpdate(values));
+            // } else alert('Try Another Password');
           }}
         >
           {({
@@ -59,7 +60,7 @@ const ChangePassword = () => {
             handleSubmit,
             isSubmitting,
           }) => (
-            <Form>
+            <Form className="text-white">
               <div className="form-group w-25 mb-3">
                 <label htmlFor="currentPass">Current Password</label>
                 <input

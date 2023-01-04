@@ -68,7 +68,7 @@ const ManageJobs = () => {
 
   // jsx part
   return (
-    <div className="main_container">
+    <div className="main_container wallpaper">
       <AdminPageNav />
       <div className="container mt-5">
         <Link to={'/add-jobs'} type="button" className="btn btn-primary">

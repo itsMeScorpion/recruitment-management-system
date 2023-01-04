@@ -34,7 +34,7 @@ const ApplicationList = () => {
   };
 
   return (
-    <div>
+    <div className="wallpaper text-white">
       <AdminPageNav />
       <div className="container">
         <div className="m-2 text-center">
@@ -48,11 +48,11 @@ const ApplicationList = () => {
           </CSVLink>
         </div>
 
-        <div className="m-5">
+        <div className="m-5 ">
           <div className="table-responsive">
             <table className="table user-list">
               <thead>
-                <tr>
+                <tr className='text-white'>
                   <th className="text-center">
                     <span> Applicant Name</span>
                   </th>
