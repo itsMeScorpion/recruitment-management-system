@@ -39,11 +39,11 @@ const JobLists = () => {
   return (
     <div className="mt-2 mb-2">
       <Header />
-      <div className="d-flex flex-row m-3" style={{ justifyContent: 'auto' }}>
-        <form className="d-flex w-50" onSubmit={onSearch}>
+      <div className="d-flex flex-row m-3" style={{ justifyContent: 'center' }}>
+        <form className="d-flex" onSubmit={onSearch}>
           {/* search box */}
           <input
-            className="form-control mr-sm-2 w-50"
+            className="form-control mr-sm-2"
             type="search"
             placeholder="Search For Jobs"
             value={searchWord}

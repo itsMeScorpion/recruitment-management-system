@@ -8,13 +8,19 @@ const ApplicationListRow = (props) => {
 
   return (
     <tr key={props.id}>
-      <td>
+      <td style={{ background: 'none', color: 'white', border: 'none' }}>
         <p className="applicant_name"> {props.name}</p>
       </td>
-      <td>{props.email}</td>
-      <td>{props.applied_post}</td>
-      <td>{props.phone}</td>
-      <td>
+      <td style={{ background: 'none', color: 'white', border: 'none' }}>
+        {props.email}
+      </td>
+      <td style={{ background: 'none', color: 'white', border: 'none' }}>
+        {props.applied_post}
+      </td>
+      <td style={{ background: 'none', color: 'white', border: 'none' }}>
+        {props.phone}
+      </td>
+      <td style={{ background: 'none', color: 'white', border: 'none' }}>
         <a href={props.resume} className="btn btn-success" download>
           Download Resume
           <span className="fa-solid fa-file-arrow-down "></span>

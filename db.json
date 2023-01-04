@@ -2,7 +2,7 @@
   "login": [
     {
       "username": "admin",
-      "password": "U2FsdGVkX19WtIIomeimTifK6imRBnQ5HUzMq4Yn/z4=",
+      "password": "U2FsdGVkX1/MxKxeo1sQRMirYUM7UoJHMa4EEsVrSfU=",
       "id": 1
     }
   ],
@@ -39,6 +39,17 @@
       "salary": 100000,
       "mode": "half time",
       "id": 3
+    },
+    {
+      "title": "jithesg",
+      "company": "hsdovbsbuvlikshjdbv",
+      "technologies": "saodvbsuiagh",
+      "skills": "dvbisbajvksdjvsjavb",
+      "benefits": "bbsdkajvbsk",
+      "experience": "ajbd oi",
+      "salary": 7546468,
+      "mode": "bsiadgesajnbvgkjlb",
+      "id": 4
     }
   ],
   "applications": [

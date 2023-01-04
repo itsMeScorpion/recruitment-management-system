@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
@@ -21,6 +21,7 @@ const LoginSchema = Yup.object().shape({
 });
 
 const Login = () => {
+  const [loader, setloader] = useState(false);
   const dispatch = useDispatch();
   const history = useHistory();
   return (
@@ -44,7 +45,11 @@ const Login = () => {
                 // on submit values
                 onSubmit={(values, { resetForm }) => {
                   resetForm({ values: '' });
-                  dispatch(adminLogin(values));
+                  setloader(true);
+                  setTimeout(() => {
+                    setloader(false);
+                    dispatch(adminLogin(values));
+                  }, 6000);
                 }}
               >
                 {({
@@ -55,56 +60,65 @@ const Login = () => {
                   handleBlur,
                   handleSubmit,
                 }) => (
-                  <form onSubmit={handleSubmit}>
-                    <div className="form-group mb-4">
-                      <label htmlFor="uname" style={{ fontWeight: '700' }}>
-                        Enter username
-                      </label>
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="uname"
-                        name="uname"
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        value={values.uname}
-                        placeholder="Enter Your username"
+                  <>
+                    {loader ? (
+                      <img
+                        style={{ width: '100%' }}
+                        src="https://media.tenor.com/0c9Um-Q1OfAAAAAC/tom-evil.gif"
                       />
+                    ) : (
+                      <form onSubmit={handleSubmit}>
+                        <div className="form-group mb-4">
+                          <label htmlFor="uname" style={{ fontWeight: '700' }}>
+                            Enter username
+                          </label>
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="uname"
+                            name="uname"
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            value={values.uname}
+                            placeholder="Enter Your username"
+                          />
 
-                      {errors.uname && touched.uname ? (
-                        <div className="text-danger">{errors.uname}</div>
-                      ) : null}
-                    </div>
+                          {errors.uname && touched.uname ? (
+                            <div className="text-danger">{errors.uname}</div>
+                          ) : null}
+                        </div>
 
-                    <div className="form-group mb-4">
-                      <label htmlFor="pass" style={{ fontWeight: '700' }}>
-                        Enter Password
-                      </label>
-                      <input
-                        type="password"
-                        className="form-control"
-                        id="pass"
-                        name="pass"
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        value={values.pass}
-                        placeholder="Enter Your passWord"
-                      />
+                        <div className="form-group mb-4">
+                          <label htmlFor="pass" style={{ fontWeight: '700' }}>
+                            Enter Password
+                          </label>
+                          <input
+                            type="password"
+                            className="form-control"
+                            id="pass"
+                            name="pass"
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            value={values.pass}
+                            placeholder="Enter Your passWord"
+                          />
 
-                      {errors.pass && touched.pass ? (
-                        <div className="text-danger">{errors.pass}</div>
-                      ) : null}
-                    </div>
+                          {errors.pass && touched.pass ? (
+                            <div className="text-danger">{errors.pass}</div>
+                          ) : null}
+                        </div>
 
-                    <div className="text-center text-lg-start mt-4 pt-2">
-                      <button type="submit" className="btn btn-primary">
-                        Login
-                      </button>{' '}
-                      <Link to="/" className="btn btn-secondary">
-                        Back
-                      </Link>
-                    </div>
-                  </form>
+                        <div className="text-center text-lg-start mt-4 pt-2">
+                          <button type="submit" className="btn btn-primary">
+                            Login
+                          </button>{' '}
+                          <Link to="/" className="btn btn-secondary">
+                            Back
+                          </Link>
+                        </div>
+                      </form>
+                    )}
+                  </>
                 )}
               </Formik>
             </div>

@@ -76,7 +76,7 @@ const ManageJobs = () => {
         </Link>
 
         <div className="mt-3">
-          <DataTable columns={columns} data={jobData} pagination/>
+          <DataTable columns={columns} data={jobData} pagination />
         </div>
         <Link to={'/Dashboard'} className="btn btn-secondary mt-3">
           Back

@@ -48,11 +48,14 @@ const ApplicationList = () => {
           </CSVLink>
         </div>
 
-        <div className="m-5 ">
+        <div className="m-3 ">
           <div className="table-responsive">
-            <table className="table user-list">
-              <thead>
-                <tr className='text-white'>
+            <table
+              className="table user-list"
+             
+            >
+              <thead  >
+                <tr className="text-white">
                   <th className="text-center">
                     <span> Applicant Name</span>
                   </th>
