@@ -34,6 +34,7 @@ import thunk from 'redux-thunk';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+console.log("hiiiiiii")
 const store = createStore(reducers, composeEnhancer(applyMiddleware(thunk)));
 root.render(
   <Provider store={store}>
